@@ -3,7 +3,6 @@ import { buildClientSchema, printSchema } from 'graphql';
 
 const GraphQLSchema = ({ logs, schema }) => {
 
-  // let response = JSON.stringify(logs[logs.length - 1].res);
 
   if (schema !== 'GraphQL schema not available.') {
 
@@ -15,7 +14,7 @@ const GraphQLSchema = ({ logs, schema }) => {
     return (
       <div id="graphql" >
         <div className="graphql">
-          <b>Schema:</b> 
+          <b>Schema:</b>
           <pre className="graphql-p">
             {schemaSDL}
           </pre>
@@ -24,7 +23,7 @@ const GraphQLSchema = ({ logs, schema }) => {
     )
 
   } else {
-    
+
     return (
       <div id="graphql" >
         <div className="graphql">
